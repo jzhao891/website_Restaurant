@@ -1,7 +1,6 @@
-# Customised-website-for-Restaurant-
-## Restaurant homepage
+# Customised-website-for-Restaurant
 ## main module
-### Homepage
-### About
-### Ordering
-### Menu
+- Homepage
+- About
+- Ordering
+- Menu
