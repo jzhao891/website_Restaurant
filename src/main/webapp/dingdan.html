@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="ie ie9" lang="en-US">
+<![endif]-->
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<title>YOM - Multipurpose HTML Theme</title>
+
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+
+
+
+	<link rel="stylesheet" href="files/css/bootstrap.css">
+	<link rel="stylesheet" href="files/css/animate.css">
+	<link rel="stylesheet" href="files/css/simple-line-icons.css">
+	<link rel="stylesheet" href="files/css/font-awesome.min.css">
+	<link rel="stylesheet" href="files/css/style.css">
+
+	<link rel="stylesheet" href="files/rs-plugin/css/settings.css">
+
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+<div id="orderlist">
+<p id="content"></p>
+  <div>
+
+
+
+
+	<script type="text/javascript" src="files/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="files/js/bootstrap.min.js"></script>
+	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script src="files/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="files/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<script type="text/javascript" src="files/js/plugins.js"></script>
+	<script type="text/javascript" src="files/js/custom.js"></script>
+  <script>
+    d={}
+    $.ajax({
+      type:"GET",
+      url:"get",
+      data:d,
+      dataType:'json',
+      cache:false,
+      success: function(data){
+        console.log(data.value);
+        documnet.getElementById("content").innerText=data.value;
+      }
+    });
+  </script>
+
+</body>
+</html>

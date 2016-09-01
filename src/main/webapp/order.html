@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="ie ie9" lang="en-US">
+<![endif]-->
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<title>Order for student</title>
+
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+
+
+
+	<link rel="stylesheet" href="files/css/bootstrap.css">
+	<link rel="stylesheet" href="files/css/animate.css">
+	<link rel="stylesheet" href="files/css/simple-line-icons.css">
+	<link rel="stylesheet" href="files/css/font-awesome.min.css">
+	<link rel="stylesheet" href="files/css/style.css">
+	<link rel="stylesheet" href="files/css/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="files/rs-plugin/css/settings.css">
+
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+
+	<div class="sidebar-menu-container" id="sidebar-menu-container">
+
+		<div class="sidebar-menu-push">
+
+			<div class="sidebar-menu-overlay"></div>
+
+			<div class="sidebar-menu-inner">
+
+				<header class="site-header" style="padding-top:0px;padding-bottom:0px">
+					<div id="main-header" class="main-header header-sticky">
+						<div class="inner-header clearfix">
+							<div class="logo" style="padding-top:0px;padding-bottom:0px;margin-top:5px;margin-bottom:0px;">
+								<table>
+									<tr><td><input type="image" src="files/images/chinese.png" style="width:40px;heigth:70px" alt="pepper"></td>
+										<td><input type="image" src="files/images/english-new.png" style="width:120px;heigth:20px" alt="pepper"></td></tr>
+
+								</table>
+
+
+							</div>
+							<div class="header-right-toggle pull-right hidden-md hidden-lg">
+								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
+							</div>
+							<nav class="main-navigation pull-right hidden-xs hidden-sm">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#">Menu</a></li>
+									<!--<li><a href="#" class="has-submenu">Menu</a>
+										  <ul class="sub-menu">
+											<li><a href="services.html">Services</a></li>
+											<li><a href="clients.html">Clients</a></li>
+										</ul>
+									</li>-->
+									<!-- <li><a href="#" class="has-submenu">Blog</a>
+										<ul class="sub-menu">
+											<li><a href="blog.html">Blog Classic</a></li>
+											<li><a href="blog-grid.html">Blog Grid</a></li>
+											<li><a href="blog-single.html">Single Post</a></li>
+										</ul>
+									</li>-->
+									<li><a href="about.html">About</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(files/images/01-heading.jpg)">
+					<div class="container">
+						<div class="page-name">
+							<h1>Student Lunch</h1>
+							<span>学生午餐</span>
+						</div>
+					</div>
+				</section>
+
+				<section class="single-project">
+					<div class="container">
+						<div class="row">
+							<h3 style="color:black"><i class="fa fa-truck"></i> Weekly Lunch Special Booking</h3>
+						</div>
+						<div class="row">
+							<h4>........</h4>
+						</div>
+						<div class="row">
+						</div>
+						<div class="row" id="orderlist">
+							<!-- menu -->
+
+
+						</div>
+            <div class="row" style="margin-top:30px">
+              <h4 style=margin-top:5px;margin-bottom:0px”>姓名</h4><input type="text" id="name" placeholder="name(optional)" >
+              <h4 style=margin-top:5px;margin-bottom:0px”>电话</h4><input type="text" id="name" placeholder="phone(optional)">
+              <input id="submit" type="submit" value="submit" onclick="submit()"></input>
+            </div>
+					</div>
+				</section>
+
+                <footer class="footer">
+      <div class="three spacing"></div>
+	  <div class="container">
+	  <div class="col-md-3">
+	  	<div class="row">
+          <h1>
+            <a href="index.html">
+             Chengdu Gourmet
+            </a>
+          </h1>
+          <p>©2016 Chengdu Gourmet. All rights reserved.</p>
+          <div class="spacing"></div>
+          <ul class="socials">
+            <li>
+              <a href="http://facebook.com">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://twitter.com">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://dribbble.com">
+                <i class="fa fa-dribbble"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://tumblr.com">
+                <i class="fa fa-tumblr"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="spacing"></div>
+    </div>
+	  </div>
+      <div class="col-md-8">
+        <div class="row">
+        	<div class="col-md-5">
+          <div class="spacing"></div>
+          <div class="links">
+            <h4>LUNCH SPECIAL</h4>
+            <p>We offer lunch special from opening until 3:00PM except Sunday </p>
+          </div>
+          <div class="spacing"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="spacing"></div>
+          <div class="links">
+            <h4>DELIVERY</h4>
+            <p>We have drivers deliver food within 3 miles from our restaurant</p>
+          </div>
+          <div class="spacing"></div>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+
+          <div class="spacing"></div>
+          <h4>CATERING</h4>
+          <p>Catering for special events like birthday party, business gathering,etc. For more details, please <a href="contact.html">contact us</a> directly</p>
+
+        </div>
+      </div>
+
+
+	  </div>
+      <div class="two spacing"></div>
+    </footer>
+
+
+				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+			</div>
+
+		</div>
+
+		
+
+	</div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<!--  <script type="text/javascript" src="files/js/jquery-1.11.1.min.js"></script>-->
+	<script type="text/javascript" src="files/js/bootstrap.min.js"></script>
+	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script src="files/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="files/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<script type="text/javascript" src="files/js/plugins.js"></script>
+	<script type="text/javascript" src="files/js/custom.js"></script>
+	<script type="text/javascript">
+  /*var d={
+    "Mon":"鱼香肉丝+清炒土豆丝+什么西米露",
+    "Tue":"a+b+d",
+    "Wed":"a+b+e",
+    "Thu":"a+b+f",
+    "Fri":"a+b+g"
+  }
+  var divR1=document.createElement('div');
+  divR1.className="row";
+  var divC11=document.createElement('div');
+  divC11.className="col-md-5";
+  var divC12=document.createElement('div');
+  divC12.className="col-md-5";
+  var h31=document.createElement('h5');
+  h31.innerText="周一："+d.Mon;
+  divC11.appendChild(h31);
+  var cont1=document.createElement('label');
+  cont1.innerHTML="数量：";
+  var input1=document.createElement('input');
+  input1.placeholder="1";input1.type="text";
+  input1.id="Mon";
+  input1.value="";
+  cont1.appendChild(input1);
+  divC12.appendChild(cont1);
+  //divC12.appendChild(input1);
+  divR1.appendChild(divC11);
+  divR1.appendChild(divC12);
+
+  var divR2=document.createElement('div');
+  divR2.className="row";
+  var divC21=document.createElement('div');
+  divC21.className="col-md-5";
+  var divC22=document.createElement('div');
+  divC22.className="col-md-5";
+  var h32=document.createElement('h5');
+  h32.innerText="周二："+d.Tue;
+  divC21.appendChild(h32);
+  var cont2=document.createElement('label');
+  cont2.innerText="数量：";
+  var input2=document.createElement('input');
+  input2.placeholder="1";input2.type="text";
+  input2.id="Tue";
+  input2.value="";
+  divC22.appendChild(cont2);
+  cont2.appendChild(input2);
+  divR2.appendChild(divC21);
+  divR2.appendChild(divC22);
+
+  var divR3=document.createElement('div');
+  divR3.className="row";
+  var divC31=document.createElement('div');
+  divC31.className="col-md-5";
+  var divC32=document.createElement('div');
+  divC32.className="col-md-5";
+  var h33=document.createElement('h5');
+  h33.innerText="周三："+d.Wed;
+  divC31.appendChild(h33);
+  var cont3=document.createElement('label');
+  cont3.innerText="数量：";
+  var input3=document.createElement('input');
+  input3.placeholder="1";input3.type="text";
+  input3.id="Wed";
+  input3.value="";
+  divC32.appendChild(cont3);
+  cont3.appendChild(input3);
+  divR3.appendChild(divC31);
+  divR3.appendChild(divC32);
+
+  var divR4=document.createElement('div');
+  divR4.className="row";
+  var divC41=document.createElement('div');
+  divC41.className="col-md-5";
+  var divC42=document.createElement('div');
+  divC42.className="col-md-5";
+  var h34=document.createElement('h5');
+  h34.innerText="周四："+d.Thu;
+  divC41.appendChild(h34);
+  var cont4=document.createElement('label');
+  cont4.innerText="数量：";
+  var input4=document.createElement('input');
+  input4.placeholder="1";input4.type="text";
+  input4.id="Thu";
+  input4.value="";
+  divC42.appendChild(cont4);
+  cont4.appendChild(input4);
+  divR4.appendChild(divC41);
+  divR4.appendChild(divC42);
+
+  var divR5=document.createElement('div');
+  divR5.className="row";
+  var divC51=document.createElement('div');
+  divC51.className="col-md-5";
+  var divC52=document.createElement('div');
+  divC52.className="col-md-5";
+  var h35=document.createElement('h5');
+  h35.innerText="周五："+d.Fri;
+  divC51.appendChild(h35);
+  var cont5=document.createElement('label');
+  cont5.innerText="数量：";
+  var input5=document.createElement('input');
+  input5.placeholder="1";input5.type="text";
+  input5.id="Mon";
+  input5.value="";
+  divC52.appendChild(cont5);
+  cont5.appendChild(input5);
+  divR5.appendChild(divC51);
+  divR5.appendChild(divC52);
+  var menulist=document.getElementById('orderlist');
+  /*menulist.appendChild(divR1);
+  menulist.appendChild(divR2);
+  menulist.appendChild(divR3);
+  menulist.appendChild(divR4);
+  menulist.appendChild(divR5);*/
+ /* var week=new Date().getDay();
+  var list=[divR1,divR2,divR3,divR4,divR5];
+  console.log(list);
+  for(var i=week;i<5;i++){
+    console.log(i);
+    console.log(list[i]);
+    menulist.appendChild(list[i]);
+  }
+  if(week>=5){
+    menulist.innerHTML="<h5>There is no menu available!</h5>"
+  }*/
+  var d={};
+	$.ajax({
+	      type:"GET",
+	      url:"menulist",
+	      data:d,
+	      dataType:'json',
+	      cache:false,
+	      success: function(data){
+	    	  var d=eval(data);
+	    	  var menulist=document.getElementById('orderlist');
+
+	    	  if(d.error=="1"){
+	    		  var h2=document.createElement('h2');
+	    		  h2.innerHTML="No Menu!";
+	    		  menulist.appendChild(h2);
+	    	  }
+
+	    	  else{
+	    		//display the menu list
+	    		  console.log(d);
+            var divR1=document.createElement('div');
+            divR1.className="row";
+            var divC11=document.createElement('div');
+            divC11.className="col-md-5";
+            var divC12=document.createElement('div');
+            divC12.className="col-md-5";
+	    		  var h31=document.createElement('h5');
+            h31.innerText="周一："+d.Mon;
+            divC11.appendChild(h31);
+            var cont1=document.createElement('label');
+            cont1.innerText="数量：";
+            var input1=document.createElement('input');
+            input1.placeholder="1";input1.type="text";
+            input1.id="Mon";
+            input1.value="0s";
+            divC12.appendChild(cont1);
+            divC12.appendChild(input1);
+            divR1.appendChild(divC11);
+            divR1.appendChild(divC12);
+
+            var divR2=document.createElement('div');
+            divR2.className="row";
+            var divC21=document.createElement('div');
+            divC21.className="col-md-5";
+            var divC22=document.createElement('div');
+            divC22.className="col-md-5";
+	    		  var h32=document.createElement('h5');
+            h32.innerText="周二："+d.Tue;
+            divC21.appendChild(h32);
+            var cont2=document.createElement('label');
+            cont2.innerText="数量：";
+            var input2=document.createElement('input');
+            input2.placeholder="1";input2.type="text";
+            input2.id="Tue";
+            input2.value="0";
+            divC22.appendChild(cont2);
+            cont2.appendChild(input2);
+            divR2.appendChild(divC21);
+            divR2.appendChild(divC22);
+
+            var divR3=document.createElement('div');
+            divR3.className="row";
+            var divC31=document.createElement('div');
+            divC31.className="col-md-5";
+            var divC32=document.createElement('div');
+            divC32.className="col-md-5";
+	    		  var h33=document.createElement('h5');
+            h33.innerText="周三："+d.Wed;
+            divC31.appendChild(h33);
+            var cont3=document.createElement('label');
+            cont3.innerText="数量：";
+            var input3=document.createElement('input');
+            input3.placeholder="1";input3.type="text";
+            input3.id="Wed";
+            input3.value="0";
+            divC32.appendChild(cont3);
+            cont3.appendChild(input3);
+            divR3.appendChild(divC31);
+            divR3.appendChild(divC32);
+
+            var divR4=document.createElement('div');
+            divR4.className="row";
+            var divC41=document.createElement('div');
+            divC41.className="col-md-5";
+            var divC42=document.createElement('div');
+            divC42.className="col-md-5";
+	    		  var h34=document.createElement('h5');
+            h34.innerText="周四："+d.Thu;
+            divC41.appendChild(h34);
+            var cont4=document.createElement('label');
+            cont4.innerText="数量：";
+            var input4=document.createElement('input');
+            input4.placeholder="1";input4.type="text";
+            input4.id="Thu";
+            input4.value="0";
+            divC42.appendChild(cont4);
+            cont4.appendChild(input4);
+            divR4.appendChild(divC41);
+            divR4.appendChild(divC42);
+
+            var divR5=document.createElement('div');
+            divR5.className="row";
+            var divC51=document.createElement('div');
+            divC51.className="col-md-5";
+            var divC52=document.createElement('div');
+            divC52.className="col-md-5";
+	    		  var h35=document.createElement('h5');
+            h35.innerText="周五："+d.Fri;
+            divC51.appendChild(h35);
+            var cont5=document.createElement('label');
+            cont5.innerText="数量：";
+            var input5=document.createElement('input');
+            input5.placeholder="1";input5.type="text";
+            input5.id="Fri";
+            input5.value="0";
+            divC52.appendChild(cont5);
+            cont5.appendChild(input5);
+            divR5.appendChild(divC51);
+            divR5.appendChild(divC52);
+
+            var week=new Date().getDay();
+            var list=[divR1,divR2,divR3,divR4,divR5];
+            console.log(list);
+            for(var i=week;i<5;i++){
+              console.log(i);
+              console.log(list[i]);
+              menulist.appendChild(list[i]);
+            }
+            if(week>=5){
+              menulist.innerHTML="<h5>There is no menu available!</h5>"
+            };
+
+	    	  }
+
+	      }
+	    });
+	</script>
+
+</body>
+<script>
+  function submit(){
+    var mon=document.getElementById("Mon");
+    var tue=document.getElementById("Tue");
+    var wed=document.getElementById("Wed");
+    var thu=document.getElementById("Thu");
+    var fri=document.getElementById("Fri");
+	
+    var d={
+      "Mon":mon===null?"0":mon.value,
+      "Tue":tue===null?"0":tue.value,
+      "Wed":wed===null?"0":wed.value,
+      "Thu":thu===null?"0":thu.value,
+      "Fri":fri===null?"0":fri.value
+    }
+	console.log(d);
+    $.ajax({
+      type:"POST",
+      url:"submit",
+      data:d,
+      dataType:'json',
+      cache:false,
+      success: function(data){
+        var json=eval(data);
+        if(json.value==1){
+          window.alert("submit successfully!");
+        }
+        else{
+          window.alert("submission failed!");
+        }
+      }
+    });
+  }
+</script>
+</html>
